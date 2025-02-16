@@ -33,6 +33,8 @@ mon-on is a small utility for X11 that monitors for a specific keypress and, whe
 2. **Optional Installation via make:**
 
     mon-on can be optionally installed as a system service using the provided Makefile targets.
+
+    The service file must be edited before running this commnad. Please see the service file for more info.
     ```bash
     sudo make install
     ```
