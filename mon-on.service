@@ -1,0 +1,14 @@
+[Unit]
+Description=mon-on: montior tool
+After=graphical.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/mon-on :0
+# Non root X user
+Environment=XAUTHORITY=/home/replace_me/.Xauthority
+User=replace_me
+Restart=always
+
+[Install]
+WantedBy=graphical.target
